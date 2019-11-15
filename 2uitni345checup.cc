@@ -309,7 +309,7 @@ c.clear();
 }
 if((tet) && (tat) && (tit) && (tut)){
     minn--;                                              //if everything is correct just lowering minimal amount
-}                                                        //of joiners, from the main matrix (a) it is already deleted
+}                                                        //of joiners, from the main matrix (a) tested joiner is already deleted
  else{
     a[xx][yy] = 1;                                       //else just restoring everything
     a[yy][xx] = 1;
@@ -319,5 +319,6 @@ for(int bb = n - 1; bb >= 0; bb--){                      //deleting matrix of in
  }
     delete[] aaa;
  }
+    cout<<minn;
 return 0;
 }
